@@ -24,6 +24,7 @@ $(document).ready(function () {
             result = "You really dont seem to like any of them, maybe something other than programing is your thing! Also you might have entered something other than y or n"
         }
 
+        $("#result").text(result)
         console.log(result);
         event.preventDefault()
     })
