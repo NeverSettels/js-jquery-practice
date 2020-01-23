@@ -1,0 +1,13 @@
+#form1{
+    display: flex;
+    justify-content: space-around; 
+}
+#form1 div div{
+    display: flex;
+    justify-content: space-between;
+}
+#form1 div div input{
+    width: 5vw;
+    margin-left: 20px;
+    text-align: center;
+}
