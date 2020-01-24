@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log('loaded')
+
     $("#form1").submit(function (event) {
 
         var result = ''
@@ -24,8 +24,10 @@ $(document).ready(function () {
             result = "You really dont seem to like any of them, maybe something other than programing is your thing! Also you might have entered something other than y or n"
         }
 
+        $('#jumbo1').addClass('noDisplay')
+        $('#jumbo2').removeClass('noDisplay')
         $("#result").text(result)
-        console.log(result);
+
         event.preventDefault()
     })
 
