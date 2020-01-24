@@ -21,11 +21,17 @@ body{
     background: none;
     border: none;
     border-bottom: 1px rgb(1, 162, 1) solid;
+     font-weight: bold;
+    color: rgb(1, 162, 1);
 }
 #form1 div div input:focus{
+    outline: none;
     background: none;
     border: none;
     border-bottom: 1px rgb(1, 162, 1) solid;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    color: rgb(1, 162, 1);
 }
 .noDisplay{
     display: none;

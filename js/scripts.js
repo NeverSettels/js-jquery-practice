@@ -31,6 +31,9 @@ $(document).ready(function () {
         event.preventDefault()
     })
 
+    $("#resetBtn").click(function () {
+        location.reload(true);
+    })
 
 
 })
