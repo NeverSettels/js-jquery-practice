@@ -22,7 +22,7 @@ $(document).ready(function () {
             else if (q1 === "n" && q2 === "n" && q3 === "y" && (q4 === "y" || q4 === 'n')) {
                 result = "If you're designed minded you'll probably enjoy CSS"
             }
-            else if (q1 === "y" && q2 === "y" && q3 === "y" && q4 === "y" || q4 === 'n') {
+            else if (q1 === "y" && q2 === "y" && q3 === "y" && (q4 === "y" || q4 === 'n')) {
                 result = "You like a bit of everything! That's Awesome! You'll really like messing around in React!"
             }
             else {

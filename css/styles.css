@@ -4,8 +4,15 @@ body{
    padding-top: 10vh;
     background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
     font-family: 'Share Tech Mono', monospace;
-    font-weight: bold
+    font-weight: bold;
+    color: rgb(1, 162, 1);
+
 }
+h1 {
+     text-align: center;
+    -webkit-text-stroke: 1px rgb(2, 68, 2) ;
+    font-size: 58px;
+ }
 #form1{
     display: flex;
     justify-content: space-around; 
@@ -23,6 +30,7 @@ body{
     border-bottom: 1px rgb(1, 162, 1) solid;
      font-weight: bold;
     color: rgb(1, 162, 1);
+    padding: 0 0 1px 0 ;
 }
 #form1 div div input:focus{
     outline: none;
@@ -38,7 +46,6 @@ body{
 }
 .jumbotron{
     background-color: rgba(0, 0, 0, 0.776);
-    color: rgb(1, 162, 1);
 }
 .error{
     color: red;
