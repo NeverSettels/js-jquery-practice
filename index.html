@@ -12,40 +12,44 @@
     <title>Document</title>
 </head>
 
-<body>
-    <h3>Instructions:</h3>
-    <p>Answer the following questions with either Y for yes or N for no.</p>
-    <form id='form1'>
-        <div>
+<body class="container">
+    <div id='#jumbo1' class="jumbotron">
+        <h3>Instructions:</h3>
+        <p>Answer the following questions with either Y for yes or N for no.</p>
+        <form id='form1'>
             <div>
-                <label for="question1">Do you like looser sytanx rules? </label>
-                <input id='question1' type="text">
+                <div>
+                    <label for="question1">Do you like looser sytanx rules? </label>
+                    <input id='question1' type="text">
+                </div>
+                <div>
+                    <label for="question2">Do you like working though problems with logic?</label>
+                    <input id='question2' type="text">
+                </div>
+                <div>
+                    <label for="question3">Do you enjoy creating engaging visuals?</label>
+                    <input id='question3' type="text">
+                </div>
+                <div>
+                    <label for="question4">Do you usually plan in detail before begining a new project? </label>
+                    <input id='question4' type="text">
+                </div>
+                <div>
+                    <label for="question5">Do you like to have lots of different pieces that come together in the
+                        end?</label>
+                    <input id='question5' type="text">
+                </div>
             </div>
-            <div>
-                <label for="question2">Do you like working though problems with logic?</label>
-                <input id='question2' type="text">
-            </div>
-            <div>
-                <label for="question3">Do you enjoy creating engaging visuals?</label>
-                <input id='question3' type="text">
-            </div>
-            <div>
-                <label for="question4">Do you usually plan in detail before begining a new project? </label>
-                <input id='question4' type="text">
-            </div>
-            <div>
-                <label for="question5">Do you like to have lots of different pieces that come together in the
-                    end?</label>
-                <input id='question5' type="text">
-            </div>
+
+            <button class='btn btn-success' type="submit">Check my answers!</button>
+        </form>
+    </div>
+
+    <div id='#jumbo2' class="jumbotron noDisplay">
+        <div id="result-container">
+            <h3>Your result:</h3>
+            <p id='result'></p>
         </div>
-
-        <button class='btn btn-success' type="submit">Check my answers!</button>
-    </form>
-
-    <div id="result-container">
-        <h3>Your result:</h3>
-        <p id='result'></p>
     </div>
 </body>
 
