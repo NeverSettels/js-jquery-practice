@@ -29,7 +29,6 @@ function setResult(q1, q2, q3, q4, q5) {
     }
     return [result, error]
 }
-
 // Frontend logic
 $(document).ready(function () {
     $("#form1").submit(function (event) {
@@ -40,9 +39,7 @@ $(document).ready(function () {
         var q4 = $('#question4').val().toLowerCase()
         var q5 = $('#question5').val().toLowerCase()
 
-        if (!setResult(q1, q2, q3, q4, q5)[1]) {
-            $('#result').removeClass('error')
-        }
+        if (!setResult(q1, q2, q3, q4, q5)[1]) $('#result').removeClass('error')
         $('#jumbo1').addClass('noDisplay')
         $('#jumbo2').removeClass('noDisplay')
         $("#result").text(setResult(q1, q2, q3, q4, q5)[0])
