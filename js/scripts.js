@@ -6,10 +6,16 @@ $(document).ready(function () {
         var q3 = $('#question3').val().toLowerCase()
         var q4 = $('#question4').val().toLowerCase()
         var q5 = $('#question5').val().toLowerCase()
+        var answers = [q1, q2, q3, q4, q5]
+        var allowedAnswers = ['y', 'n']
 
         const answered = q1.length + q2.length + q3.length + q4.length + q5.length
         if (answered !== 5) {
-            result = 'Oops! Looks like you either forgot an answer or inputed something other than Y or N!'
+            result = 'Oops! Looks like you either forgot an answer!'
+            $('#result').addClass('error')
+        }
+        else if (q1 !== 'y' || q1 !== "n" || q2 !== 'y' || q2 !== "n" || q3 !== 'y' || q3 !== "n" || q4 !== 'y' || q4 !== "n" || q5 !== 'y' || q5 !== "n") {
+            result = 'Oops! Looks like you inputed something other than Y or N!'
             $('#result').addClass('error')
         }
         else {
