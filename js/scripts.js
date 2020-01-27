@@ -1,7 +1,5 @@
 $(document).ready(function () {
-
     $("#form1").submit(function (event) {
-
         var result = ''
         var q1 = $('#question1').val().toLowerCase()
         var q2 = $('#question2').val().toLowerCase()
@@ -9,7 +7,6 @@ $(document).ready(function () {
         var q4 = $('#question4').val().toLowerCase()
         var q5 = $('#question1').val().toLowerCase()
 
-        console.log(q1, q2, q3, q4, q5);
         const answered = q1.length + q2.length + q3.length + q4.length + q5.length
         if (answered !== 5) {
             result = 'Oops! Looks like you either forgot an answer or inputed something other than Y or N!'
@@ -27,19 +24,14 @@ $(document).ready(function () {
             }
             else {
                 result = "You really dont seem to like any of them, maybe something other than programing is your thing!"
-
             }
         }
         $('#jumbo1').addClass('noDisplay')
         $('#jumbo2').removeClass('noDisplay')
         $("#result").text(result)
-
         event.preventDefault()
     })
-
     $("#resetBtn").click(function () {
         location.reload(true);
     })
-
-
 })
