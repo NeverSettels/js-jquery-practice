@@ -3,12 +3,16 @@ function setResult(q1, q2, q3, q4, q5) {
     const answered = q1.length + q2.length + q3.length + q4.length + q5.length
     let result = '';
     let error = true;
+
+    //checks if user didnt fill out all inputs
     if (answered !== 5) {
         result = 'Oops! Looks like you either forgot an answer!'
     }
+    //checks if user inputed 
     else if ((q1 != 'y' && q1 != "n") || (q2 != 'y' && q2 != "n") || (q3 != 'y' && q3 != "n") || (q4 != 'y' && q4 != "n") || (q5 != 'y' && q5 != "n")) {
         result = 'Oops! Looks like you inputed something other than Y or N!'
     }
+    // In case of inputs being correct finds right answer
     else {
         error = false
         if (q1 === "y" && q2 === "y" && q3 === "n" && q4 === "y") {
@@ -33,13 +37,15 @@ function setResult(q1, q2, q3, q4, q5) {
 $(document).ready(function () {
     $("#form1").submit(function (event) {
         event.preventDefault()
+        //collects inputs
         var q1 = $('#question1').val().toLowerCase()
         var q2 = $('#question2').val().toLowerCase()
         var q3 = $('#question3').val().toLowerCase()
         var q4 = $('#question4').val().toLowerCase()
         var q5 = $('#question5').val().toLowerCase()
-
+        //checks to see if its an error message and adds class 'error' if it is
         if (!setResult(q1, q2, q3, q4, q5)[1]) $('#result').removeClass('error')
+        //sets the displays to correct info
         $('#jumbo1').addClass('noDisplay')
         $('#jumbo2').removeClass('noDisplay')
         $("#result").text(setResult(q1, q2, q3, q4, q5)[0])
