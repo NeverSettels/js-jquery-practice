@@ -5,7 +5,7 @@ $(document).ready(function () {
         var q2 = $('#question2').val().toLowerCase()
         var q3 = $('#question3').val().toLowerCase()
         var q4 = $('#question4').val().toLowerCase()
-        var q5 = $('#question1').val().toLowerCase()
+        var q5 = $('#question5').val().toLowerCase()
 
         const answered = q1.length + q2.length + q3.length + q4.length + q5.length
         if (answered !== 5) {
