@@ -1,12 +1,19 @@
 # Coding Language Quiz
 
-## Usage
-To play around clone the repo and either drag and drop the index.html file or simply double click it on the folder.
+![alt text](images/screenshoot.png "screenshot of quiz")
 
+## Usage
+To try out this site click on the botton on the top  left that says clone or download, and into the console of your machine and enter:
+
+    git clone https://github.com/NeverSettels/js-jquery-practice.git
+
+then open the index.html file either drag and drop to the browser of open the file explorer and double click it.
+
+## Description
 A simple 5 question quiz te help you decide if you should learn CSS or javascript or learn both so you can learn React. It contains a simple error message in case of an invalid input.
 
 ## Technologies
-### languages
+### Languages
 * HTML
 * CSS
 * JavaScript
@@ -20,5 +27,5 @@ A simple 5 question quiz te help you decide if you should learn CSS or javascrip
 
 ## Licensing
 
-Open License just make sure to attribute it to me : )
+MIT open licence 
 
