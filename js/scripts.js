@@ -4,30 +4,22 @@ function setResult(q1, q2, q3, q4, q5) {
     let result = '';
     let error = true;
 
-    //checks if user didnt fill out all inputs
+    //checks if user didnt fill out all inputs and with y or n
     if (answered !== 5) {
         result = 'Oops! Looks like you either forgot an answer!'
-    }
-    //checks if user inputed 
-    else if ((q1 != 'y' && q1 != "n") || (q2 != 'y' && q2 != "n") || (q3 != 'y' && q3 != "n") || (q4 != 'y' && q4 != "n") || (q5 != 'y' && q5 != "n")) {
+    } else if ((q1 != 'y' && q1 != "n") || (q2 != 'y' && q2 != "n") || (q3 != 'y' && q3 != "n") || (q4 != 'y' && q4 != "n") || (q5 != 'y' && q5 != "n")) {
         result = 'Oops! Looks like you inputed something other than Y or N!'
-    }
-    // In case of inputs being correct finds right answer
-    else {
+    } else { //if all inputs are correct it finds the right result
         error = false
         if (q1 === "y" && q2 === "y" && q3 === "n" && q4 === "y") {
             result = "You'll really enjoy JavaScript!"
-        }
-        else if (q1 === "n" && q2 === "n" && q3 === "y" && (q4 === "y" || q4 === 'n')) {
+        } else if (q1 === "n" && q2 === "n" && q3 === "y" && (q4 === "y" || q4 === 'n')) {
             result = "If you're designed minded you'll probably enjoy CSS"
-        }
-        else if (q1 === "y" && q2 === "y" && q3 === "y" && (q4 === "y" || q4 === 'n')) {
+        } else if (q1 === "y" && q2 === "y" && q3 === "y" && (q4 === "y" || q4 === 'n')) {
             result = "You like a bit of everything! That's Awesome! You'll really like messing around in React!"
-        }
-        else if (q1 === "n" && q2 === "n" && q3 === "n" && q4 === "n" && q5 === 'y') {
+        } else if (q1 === "n" && q2 === "n" && q3 === "n" && q4 === "n" && q5 === 'y') {
             result = "You'll probably enjoy just about any programing language! They're all about a whole lot of things coming together! "
-        }
-        else {
+        } else {
             result = "You really dont seem to like any of them, maybe something other than programing is your thing!"
         }
     }
